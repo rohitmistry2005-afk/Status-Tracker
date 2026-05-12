@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="TeacherEval — AI-powered teacher recruitment evaluation engine."
+  />
+
+  <meta
+    name="theme-color"
+    content="#0e0f12"
+  />
+
+  <meta
+    name="color-scheme"
+    content="dark"
+  />
+
+  <title>
+    TeacherEval — AI Recruitment Intelligence
+  </title>
+
+  <!-- Favicon -->
+
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%236c8cff'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='18' fill='white'>T</text></svg>"
+  />
+
+  <!-- Fonts -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Initial Loader Styles -->
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body,
+    #root {
+
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+
+      background: #0e0f12;
+      color: #f0f1f5;
+
+      font-family:
+        "Outfit",
+        system-ui,
+        sans-serif;
+
+      overflow: hidden;
+
+      -webkit-font-smoothing:
+        antialiased;
+    }
+
+    #boot-screen {
+
+      position: fixed;
+
+      inset: 0;
+
+      background: #0e0f12;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      justify-content: center;
+
+      gap: 18px;
+
+      z-index: 999999;
+
+      transition:
+        opacity 0.35s ease;
+    }
+
+    #boot-screen.hidden {
+
+      opacity: 0;
+
+      pointer-events: none;
+    }
+
+    .boot-logo {
+
+      width: 58px;
+      height: 58px;
+
+      border-radius: 16px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #6c8cff,
+          #4f6fff
+        );
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      font-size: 28px;
+
+      font-weight: 700;
+
+      color: white;
+
+      box-shadow:
+        0 0 40px rgba(108,140,255,0.35);
+
+      animation:
+        pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,100% {
+
+        transform: scale(1);
+      }
+
+      50% {
+
+        transform: scale(1.05);
+      }
+    }
+
+    .boot-title {
+
+      font-size: 24px;
+
+      font-weight: 700;
+
+      letter-spacing: -0.02em;
+    }
+
+    .boot-sub {
+
+      font-size: 13px;
+
+      color: #6b7280;
+
+      letter-spacing: 0.05em;
+    }
+
+    .spinner {
+
+      width: 32px;
+      height: 32px;
+
+      border-radius: 50%;
+
+      border: 3px solid #23262f;
+
+      border-top-color: #6c8cff;
+
+      animation:
+        spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    ::-webkit-scrollbar {
+
+      width: 4px;
+      height: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+
+      background: #2a2d37;
+      border-radius: 999px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Loading Screen -->
+
+  <div id="boot-screen">
+
+    <div class="boot-logo">
+      T
+    </div>
+
+    <div>
+
+      <div class="boot-title">
+        TeacherEval
+      </div>
+
+      <div
+        class="boot-sub"
+        style="
+          text-align:center;
+          margin-top:4px;
+        "
+      >
+        AI Recruitment Intelligence
+      </div>
+
+    </div>
+
+    <div class="spinner"></div>
+
+    <div class="boot-sub">
+      Initializing evaluation engine...
+    </div>
+
+  </div>
+
+  <!-- React Root -->
+
+  <div id="root"></div>
+
+  <!-- Boot Cleanup -->
+
+  <script>
+
+    (function () {
+
+      const root =
+        document.getElementById("root");
+
+      const boot =
+        document.getElementById("boot-screen");
+
+      if (!root || !boot) return;
+
+      const poll =
+        setInterval(() => {
+
+          if (root.children.length > 0) {
+
+            clearInterval(poll);
+
+            boot.classList.add("hidden");
+
+            document.body.style.overflow = "auto";
+
+            setTimeout(() => {
+
+              if (boot.parentNode) {
+
+                boot.parentNode.removeChild(boot);
+              }
+
+            }, 400);
+          }
+
+        }, 50);
+
+      setTimeout(() => {
+
+        clearInterval(poll);
+
+        if (boot.parentNode) {
+
+          boot.classList.add("hidden");
+
+          setTimeout(() => {
+
+            if (boot.parentNode) {
+
+              boot.parentNode.removeChild(boot);
+            }
+
+          }, 400);
+        }
+
+      }, 8000);
+
+    })();
+
+  </script>
+
+  <!-- React/Vite Entry -->
+
+  <script
+    type="module"
+    src="/src/main.jsx"
+  ></script>
+
+</body>
+</html>

@@ -1,0 +1,313 @@
+[
+  {
+    "teacher_id": "T001",
+    "name": "Aarav Sharma",
+    "location": "Mumbai",
+    "education": {
+      "degree": "B.Tech (Computer Science)",
+      "field": "Engineering",
+      "domain": "Computer Science"
+    },
+    "resume": { "score": 88 },
+    "certificate": { "score": 91 },
+    "communication": { "score": 4.5 },
+    "tech": {
+      "score": 4.7,
+      "skills": ["Python", "DSA"]
+    },
+    "student_feedback": { "rating": 4.6 },
+    "experience_years": 4,
+    "skip_flags": {
+      "domain_mismatch": false,
+      "low_communication": false
+    }
+  },
+
+  {
+    "teacher_id": "T002",
+    "name": "Priya Verma",
+    "location": "Delhi",
+    "education": {
+      "degree": "B.Tech (AI/ML)",
+      "field": "Engineering",
+      "domain": "Artificial Intelligence"
+    },
+    "resume": { "score": 90 },
+    "certificate": { "score": 89 },
+    "communication": { "score": 4.2 },
+    "tech": {
+      "score": 4.8,
+      "skills": ["ML", "Deep Learning"]
+    },
+    "student_feedback": { "rating": 4.7 },
+    "experience_years": 3,
+    "skip_flags": {
+      "domain_mismatch": false,
+      "low_communication": false
+    }
+  },
+
+  {
+    "teacher_id": "T003",
+    "name": "Rahul Iyer",
+    "location": "Bangalore",
+    "education": {
+      "degree": "B.Tech (Data Science)",
+      "field": "Engineering",
+      "domain": "Data Science"
+    },
+    "resume": { "score": 85 },
+    "certificate": { "score": 87 },
+    "communication": { "score": 3.9 },
+    "tech": {
+      "score": 4.6,
+      "skills": ["Pandas", "ML"]
+    },
+    "student_feedback": { "rating": 4.5 },
+    "experience_years": 5,
+    "skip_flags": {
+      "domain_mismatch": false,
+      "low_communication": false
+    }
+  },
+
+  {
+    "teacher_id": "T004",
+    "name": "Neha Gupta",
+    "location": "Kolkata",
+    "education": {
+      "degree": "BCA",
+      "field": "Computer Applications",
+      "domain": "Software Development"
+    },
+    "resume": { "score": 78 },
+    "certificate": { "score": 80 },
+    "communication": { "score": 4.6 },
+    "tech": {
+      "score": 4.1,
+      "skills": ["Java", "Web Dev"]
+    },
+    "student_feedback": { "rating": 4.4 },
+    "experience_years": 3,
+    "skip_flags": {
+      "domain_mismatch": false,
+      "low_communication": false
+    }
+  },
+
+  {
+    "teacher_id": "T005",
+    "name": "Karan Mehta",
+    "location": "Mumbai",
+    "education": {
+      "degree": "M.Tech (CSE)",
+      "field": "Engineering",
+      "domain": "Computer Science"
+    },
+    "resume": { "score": 92 },
+    "certificate": { "score": 94 },
+    "communication": { "score": 4.8 },
+    "tech": {
+      "score": 4.9,
+      "skills": ["System Design"]
+    },
+    "student_feedback": { "rating": 4.9 },
+    "experience_years": 7,
+    "skip_flags": {
+      "domain_mismatch": false,
+      "low_communication": false
+    }
+  },
+
+  {
+    "teacher_id": "T006",
+    "name": "Sneha Reddy",
+    "location": "Hyderabad",
+    "education": {
+      "degree": "B.Tech (IT)",
+      "field": "Engineering",
+      "domain": "Information Technology"
+    },
+    "resume": { "score": 84 },
+    "certificate": { "score": 82 },
+    "communication": { "score": 4.1 },
+    "tech": {
+      "score": 4.5,
+      "skills": ["Networking"]
+    },
+    "student_feedback": { "rating": 4.3 },
+    "experience_years": 4,
+    "skip_flags": {
+      "domain_mismatch": false,
+      "low_communication": false
+    }
+  },
+
+  {
+    "teacher_id": "T007",
+    "name": "Aditya Singh",
+    "location": "Delhi",
+    "education": {
+      "degree": "B.Tech (Electronics)",
+      "field": "Engineering",
+      "domain": "Electronics"
+    },
+    "resume": { "score": 80 },
+    "certificate": { "score": 83 },
+    "communication": { "score": 3.7 },
+    "tech": {
+      "score": 4.2,
+      "skills": ["Embedded Systems"]
+    },
+    "student_feedback": { "rating": 4.0 },
+    "experience_years": 5,
+    "skip_flags": {
+      "domain_mismatch": false,
+      "low_communication": true
+    }
+  },
+
+  {
+    "teacher_id": "T008",
+    "name": "Meera Nair",
+    "location": "Chennai",
+    "education": {
+      "degree": "MBA",
+      "field": "Management",
+      "domain": "Business Analytics"
+    },
+    "resume": { "score": 82 },
+    "certificate": { "score": 85 },
+    "communication": { "score": 4.7 },
+    "tech": {
+      "score": 3.8,
+      "skills": ["Excel", "Analytics"]
+    },
+    "student_feedback": { "rating": 4.6 },
+    "experience_years": 6,
+    "skip_flags": {
+      "domain_mismatch": false,
+      "low_communication": false
+    }
+  },
+
+  {
+    "teacher_id": "T009",
+    "name": "Rohan Das",
+    "location": "Kolkata",
+    "education": {
+      "degree": "B.Tech (Mechanical)",
+      "field": "Engineering",
+      "domain": "Mechanical"
+    },
+    "resume": { "score": 75 },
+    "certificate": { "score": 70 },
+    "communication": { "score": 3.2 },
+    "tech": {
+      "score": 4.0,
+      "skills": ["Thermodynamics"]
+    },
+    "student_feedback": { "rating": 3.9 },
+    "experience_years": 4,
+    "skip_flags": {
+      "domain_mismatch": false,
+      "low_communication": true
+    }
+  },
+
+  {
+    "teacher_id": "T010",
+    "name": "Ananya Kapoor",
+    "location": "Mumbai",
+    "education": {
+      "degree": "B.Tech (Civil)",
+      "field": "Engineering",
+      "domain": "Civil Engineering"
+    },
+    "resume": { "score": 81 },
+    "certificate": { "score": 79 },
+    "communication": { "score": 4.3 },
+    "tech": {
+      "score": 4.1,
+      "skills": ["Construction"]
+    },
+    "student_feedback": { "rating": 4.2 },
+    "experience_years": 5,
+    "skip_flags": {
+      "domain_mismatch": false,
+      "low_communication": false
+    }
+  },
+
+  {
+    "teacher_id": "T011",
+    "name": "Vikram Patel",
+    "location": "Ahmedabad",
+    "education": {
+      "degree": "B.Tech (Chemical)",
+      "field": "Engineering",
+      "domain": "Chemical Engineering"
+    },
+    "resume": { "score": 79 },
+    "certificate": { "score": 76 },
+    "communication": { "score": 3.8 },
+    "tech": {
+      "score": 4.2,
+      "skills": ["Process Engg"]
+    },
+    "student_feedback": { "rating": 4.1 },
+    "experience_years": 4,
+    "skip_flags": {
+      "domain_mismatch": false,
+      "low_communication": false
+    }
+  },
+
+  {
+    "teacher_id": "T012",
+    "name": "Ritika Jain",
+    "location": "Jaipur",
+    "education": {
+      "degree": "B.Tech (AI/ML)",
+      "field": "Engineering",
+      "domain": "Artificial Intelligence"
+    },
+    "resume": { "score": 87 },
+    "certificate": { "score": 88 },
+    "communication": { "score": 4.3 },
+    "tech": {
+      "score": 4.7,
+      "skills": ["ML", "Python"]
+    },
+    "student_feedback": { "rating": 4.5 },
+    "experience_years": 3,
+    "skip_flags": {
+      "domain_mismatch": false,
+      "low_communication": false
+    }
+  },
+
+  {
+    "teacher_id": "T013",
+    "name": "Siddharth Roy",
+    "location": "Kolkata",
+    "education": {
+      "degree": "BCA",
+      "field": "Computer Applications",
+      "domain": "Software Development"
+    },
+    "resume": { "score": 76 },
+    "certificate": { "score": 79 },
+    "communication": { "score": 4.1 },
+    "tech": { 
+      "score": 4.3,
+      "skills": ["Java", "Spring"] 
+    },
+    "student_feedback": { "rating": 4.2 },
+    "experience_years": 2,
+    "skip_flags": { 
+      "domain_mismatch": false, 
+      "low_communication": false 
+    }
+  }
+]

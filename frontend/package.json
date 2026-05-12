@@ -1,0 +1,98 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "1.0.0",
+  "description": "AI-powered Teacher Evaluation & Recruitment Dashboard Frontend",
+  "type": "module",
+  "author": "TeacherEval Team",
+  "license": "MIT",
+
+  "scripts": {
+
+    "dev": "vite",
+
+    "start": "vite",
+
+    "build": "vite build",
+
+    "preview": "vite preview",
+
+    "lint": "eslint .",
+
+    "lint:fix": "eslint . --fix",
+
+    "clean": "rm -rf dist node_modules/.vite",
+
+    "reinstall": "npm run clean && npm install",
+
+    "check": "npm run lint && npm run build"
+  },
+
+  "dependencies": {
+
+    "axios": "^1.16.0",
+
+    "framer-motion": "^12.23.12",
+
+    "lucide-react": "^0.553.0",
+
+    "react": "^19.2.5",
+
+    "react-dom": "^19.2.5",
+
+    "react-router-dom": "^7.15.0",
+
+    "recharts": "^3.8.1"
+  },
+
+  "devDependencies": {
+
+    "@eslint/js": "^10.0.1",
+
+    "@types/react": "^19.2.14",
+
+    "@types/react-dom": "^19.2.3",
+
+    "@vitejs/plugin-react": "^6.0.1",
+
+    "eslint": "^10.2.1",
+
+    "eslint-plugin-react-hooks": "^7.1.1",
+
+    "eslint-plugin-react-refresh": "^0.5.2",
+
+    "globals": "^17.5.0",
+
+    "vite": "^8.0.10"
+  },
+
+  "keywords": [
+
+    "react",
+
+    "vite",
+
+    "fastapi",
+
+    "teacher-evaluation",
+
+    "recruitment-system",
+
+    "ai-dashboard",
+
+    "candidate-evaluation",
+
+    "teacher-recruitment",
+
+    "education-ai",
+
+    "frontend-dashboard"
+  ],
+
+  "engines": {
+
+    "node": ">=20.0.0",
+
+    "npm": ">=10.0.0"
+  }
+}
